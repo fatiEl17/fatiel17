@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de connexion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color:white;
+            border: solid 2px black;
+        }
+        header {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 0px;
+        }
+        main {
+            width: 300px;
+            margin: 50px  auto;
+            padding: 10px;
+            background-color: white;
+          
+        }
+        footer {
+            text-align: center;
+            color: black;   
+        }
+        hr{
+            border: solid black 1.25px;
+        }
+        button {
+            width: 100px;
+            padding: 10px;
+            margin-left: 500px;
+            background-color: #565dae;
+            color: black;
+            border: 1.25px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #8184a9;
+        }
+        .form-gp{
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        label {
+            margin-right: 10px;
+            font-style: normal;
+            width: 150px;
+            
+        }
+        input[type="text"],
+        input[type="password"] {
+            
+            padding: 12px;
+            
+            border: 1.5px solid black;
+            border-radius: 5px;
+            background-color: #565dae;
+        }
+        /*width: 100%;
+        margin-top: 20px;*/
+    </style>
+</head>
+<body>
+    <header>
+        <h5>Bannière (Texte,logo, ...etc) à votre choix</h5>
+    </header>
+    <hr>
+    <main>
+        <form>
+            <div class="form-gp">
+                <label for="username">Identifiant:</label>
+                <input type="text" id="username" name="username" required>
+            </div> 
+           <div class="form-gp">
+                <label for="password">Mot de Passe:</label>
+                <input type="password" id="password" name="password" required>
+           </div>
+            <button onclick="window.location.href='page2.html'" type="submit">Valider</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <h5>Pied de page (Texte,Adresse, ...etc) à votre choix </h5>
+    </footer>
+</body>
+</html>
